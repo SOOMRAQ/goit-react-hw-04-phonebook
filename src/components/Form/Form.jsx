@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import {
   StyledForm,
   StyledInput,
@@ -68,3 +69,7 @@ const Form = ({ onSubmit }) => {
 };
 
 export default Form;
+
+Form.propTypes = {
+  onSubmit: PropTypes.func,
+};
